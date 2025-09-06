@@ -6,7 +6,7 @@ const srcDir = path.join(__dirname, 'src');
 const pagesDir = path.join(srcDir, 'pages');
 const distDir = path.join(__dirname, 'dist');
 
-nunjucks.configure(srcDir, { autoescape: false });
+nunjucks.configure(srcDir, { autoescape: true });
 
 async function build() {
   await fs.mkdir(distDir, { recursive: true });
