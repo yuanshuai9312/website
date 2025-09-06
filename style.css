@@ -8,6 +8,7 @@
   --accent: #00a58f;
   --border: #e2e8f0;
   --radius: 14px;
+  --shadow: 0 6px 18px rgba(15,23,42,.08);
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -20,6 +21,8 @@ body{
 }
 a{text-decoration:none;color:inherit}
 .container{max-width:1200px;margin:0 auto;padding:0 24px}
+.skip-link{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+.skip-link:focus{left:16px;top:16px;background:#fff;color:#000;padding:.5rem .75rem;border-radius:.5rem;box-shadow:var(--shadow)}
 
 /* ===== Nav (kept layout & split dropdown) ===== */
 .nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
