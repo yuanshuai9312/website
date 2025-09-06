@@ -7,19 +7,53 @@
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<a class="skip-link" href="#main">跳到主要内容</a>
-<header class="header">
-  <div class="container hdr">
-    <a class="brand" href="index.html">半导体学习网</a>
-    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="siteNav">菜单</button>
-    <nav class="nav" id="siteNav" aria-label="主导航">
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html" aria-label="首页">
+      <span class="brand-logo" aria-hidden="true"></span>
+      <span>半导体知识站</span>
+    </a>
+
+    <nav class="nav-links" aria-label="主导航">
       <a href="index.html">首页</a>
-      <a href="basic.html" class="active">基础</a>
-      <a href="process.html">工艺</a>
+
+      <span class="dropdown">
+        <a class="dd-link active" href="basic.html">基础</a>
+        <button class="caret-btn" aria-label="展开基础" aria-expanded="false" aria-controls="menu-basic">▾</button>
+        <div class="menu" id="menu-basic" role="menu">
+          <a href="basic.html#top">返回目录</a>
+          <a href="basic.html#step1-what">STEP1 半导体是什么</a>
+          <a href="basic.html#step2-materials">STEP2 材料</a>
+          <a href="basic.html#step3-np">STEP3 n/p 型</a>
+          <a href="basic.html#step4-bands">STEP4 能带</a>
+          <a href="basic.html#step5-bands-np">STEP5 n/p 能带</a>
+          <a href="basic.html#step6-pn">STEP6 PN 结</a>
+          <a href="basic.html#step7-bias">STEP7 偏置</a>
+          <a href="basic.html#step8-breakdown">STEP8 击穿</a>
+        </div>
+      </span>
+
+      <span class="dropdown">
+        <a class="dd-link" href="process.html">工艺</a>
+        <button class="caret-btn" aria-label="展开工艺" aria-expanded="false" aria-controls="menu-process">▾</button>
+        <div class="menu" id="menu-process" role="menu">
+          <a href="process.html#oxidation">热氧化</a>
+          <a href="process.html#deposition">薄膜沉积</a>
+          <a href="process.html#lithography">光刻</a>
+          <a href="process.html#etch">刻蚀与注入</a>
+        </div>
+      </span>
+
       <a href="equipment.html">设备</a>
       <a href="materials.html">材料</a>
-      <a href="glossary.html">术语</a>
     </nav>
+
+    <div class="nav-right">
+      <form class="search" action="search.html" method="get" role="search">
+        <input name="q" type="search" placeholder="搜索：氧化、光刻、LPCVD…" aria-label="站内搜索" />
+        <span class="icon">🔎</span>
+      </form>
+    </div>
   </div>
 </header>
 <main id="main">
@@ -44,14 +78,14 @@
       <h1>基础</h1>
       <p class="muted">从原理到器件的系统化导读。</p>
       <div class="grid" style="grid-template-columns:repeat(3,1fr)">
-        <a class="card" href="basics/what-is-semiconductor.html"><img src="assets/img/basic.png" alt=""><h3 id="s1">半导体是什么</h3><p>导体vs绝缘体、带隙与温度/掺杂影响。</p><span class="more">进入</span></a>
-        <a class="card" href="basics/crystal-band.html"><img src="assets/img/basic.png" alt=""><h3 id="s2">晶体与能带</h3><p>硅的金刚石结构与能带模型。</p><span class="more">进入</span></a>
-        <a class="card" href="basics/carrier-doping.html"><img src="assets/img/basic.png" alt=""><h3 id="s3">载流子与掺杂</h3><p>费米能级、迁移率与浓度。</p><span class="more">进入</span></a>
-        <a class="card" href="basics/pn-diode.html"><img src="assets/img/basic.png" alt=""><h3 id="s4">PN 结与二极管</h3><p>耗尽层、I–V 特性与整流。</p><span class="more">进入</span></a>
-        <a class="card" href="basics/bjt.html"><img src="assets/img/basic.png" alt=""><h3 id="s5">BJT 与放大</h3><p>偏置点、小信号模型与放大。</p><span class="more">进入</span></a>
-        <a class="card" href="basics/mosfet.html"><img src="assets/img/basic.png" alt=""><h3 id="s6">MOSFET 与开关</h3><p>阈值、沟道调制与短沟道效应。</p><span class="more">进入</span></a>
-        <a class="card" href="basics/logic.html"><img src="assets/img/basic.png" alt=""><h3 id="s7">数字逻辑</h3><p>与或非、时序逻辑与触发器。</p><span class="more">进入</span></a>
-        <a class="card" href="basics/ic.html"><img src="assets/img/basic.png" alt=""><h3 id="s8">从器件到 IC</h3><p>版图、互连、功耗与 SoC。</p><span class="more">进入</span></a>
+        <a class="panel" href="basics/what-is-semiconductor.html"><img src="assets/img/basic.png" alt=""><h3 id="s1">半导体是什么</h3><p>导体vs绝缘体、带隙与温度/掺杂影响。</p><span class="more">进入</span></a>
+        <a class="panel" href="basics/crystal-band.html"><img src="assets/img/basic.png" alt=""><h3 id="s2">晶体与能带</h3><p>硅的金刚石结构与能带模型。</p><span class="more">进入</span></a>
+        <a class="panel" href="basics/carrier-doping.html"><img src="assets/img/basic.png" alt=""><h3 id="s3">载流子与掺杂</h3><p>费米能级、迁移率与浓度。</p><span class="more">进入</span></a>
+        <a class="panel" href="basics/pn-diode.html"><img src="assets/img/basic.png" alt=""><h3 id="s4">PN 结与二极管</h3><p>耗尽层、I–V 特性与整流。</p><span class="more">进入</span></a>
+        <a class="panel" href="basics/bjt.html"><img src="assets/img/basic.png" alt=""><h3 id="s5">BJT 与放大</h3><p>偏置点、小信号模型与放大。</p><span class="more">进入</span></a>
+        <a class="panel" href="basics/mosfet.html"><img src="assets/img/basic.png" alt=""><h3 id="s6">MOSFET 与开关</h3><p>阈值、沟道调制与短沟道效应。</p><span class="more">进入</span></a>
+        <a class="panel" href="basics/logic.html"><img src="assets/img/basic.png" alt=""><h3 id="s7">数字逻辑</h3><p>与或非、时序逻辑与触发器。</p><span class="more">进入</span></a>
+        <a class="panel" href="basics/ic.html"><img src="assets/img/basic.png" alt=""><h3 id="s8">从器件到 IC</h3><p>版图、互连、功耗与 SoC。</p><span class="more">进入</span></a>
       </div>
     </section>
   </div>
@@ -67,5 +101,27 @@
     <a href="#" class="back" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">↑</a>
   </div>
 </footer>
-<script src="assets/js/main.js"></script>
+<script>
+  // Split interaction: text navigates, caret toggles menu
+  (function(){
+    function closeAll(except){
+      document.querySelectorAll('.dropdown.open').forEach(function(x){
+        if(x!==except){ x.classList.remove('open'); const b=x.querySelector('.caret-btn'); if(b) b.setAttribute('aria-expanded','false'); }
+      });
+    }
+    document.querySelectorAll('.dropdown .caret-btn').forEach(function(btn){
+      btn.addEventListener('click', function(e){
+        e.preventDefault(); e.stopPropagation();
+        const dd = btn.closest('.dropdown');
+        const willOpen = !dd.classList.contains('open');
+        closeAll(dd);
+        dd.classList.toggle('open', willOpen);
+        btn.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
+      });
+    });
+    document.addEventListener('click', function(e){
+      if(!e.target.closest('.dropdown')){ closeAll(null); }
+    });
+  })();
+</script>
 </body></html>
