@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>基础 · 半导体学习网</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+{% include "partials/header.html" %}
+<main id="main">
+<section class="section container">
+  <nav class="breadcrumb" aria-label="breadcrumb">
+    <a href="index.html">首页</a><span>›</span><span>基础</span>
+  </nav>
+  <div class="grid" style="grid-template-columns:260px 1fr;gap:20px">
+    <aside class="sidebar" aria-label="目录">
+      <ol class="toc">
+        <li><a href="#s1">半导体是什么</a></li>
+        <li><a href="#s2">晶体与能带</a></li>
+        <li><a href="#s3">载流子与掺杂</a></li>
+        <li><a href="#s4">PN 结与二极管</a></li>
+        <li><a href="#s5">BJT 与放大</a></li>
+        <li><a href="#s6">MOSFET 与开关</a></li>
+        <li><a href="#s7">数字逻辑</a></li>
+        <li><a href="#s8">从器件到 IC</a></li>
+      </ol>
+    </aside>
+    <section>
+      <h1>基础</h1>
+      <p class="muted">从原理到器件的系统化导读。</p>
+      <div class="grid" style="grid-template-columns:repeat(3,1fr)">
+        <a class="card" href="basics/what-is-semiconductor.html"><img src="assets/img/basic.png" alt=""><h3 id="s1">半导体是什么</h3><p>导体vs绝缘体、带隙与温度/掺杂影响。</p><span class="more">进入</span></a>
+        <a class="card" href="basics/crystal-band.html"><img src="assets/img/basic.png" alt=""><h3 id="s2">晶体与能带</h3><p>硅的金刚石结构与能带模型。</p><span class="more">进入</span></a>
+        <a class="card" href="basics/carrier-doping.html"><img src="assets/img/basic.png" alt=""><h3 id="s3">载流子与掺杂</h3><p>费米能级、迁移率与浓度。</p><span class="more">进入</span></a>
+        <a class="card" href="basics/pn-diode.html"><img src="assets/img/basic.png" alt=""><h3 id="s4">PN 结与二极管</h3><p>耗尽层、I–V 特性与整流。</p><span class="more">进入</span></a>
+        <a class="card" href="basics/bjt.html"><img src="assets/img/basic.png" alt=""><h3 id="s5">BJT 与放大</h3><p>偏置点、小信号模型与放大。</p><span class="more">进入</span></a>
+        <a class="card" href="basics/mosfet.html"><img src="assets/img/basic.png" alt=""><h3 id="s6">MOSFET 与开关</h3><p>阈值、沟道调制与短沟道效应。</p><span class="more">进入</span></a>
+        <a class="card" href="basics/logic.html"><img src="assets/img/basic.png" alt=""><h3 id="s7">数字逻辑</h3><p>与或非、时序逻辑与触发器。</p><span class="more">进入</span></a>
+        <a class="card" href="basics/ic.html"><img src="assets/img/basic.png" alt=""><h3 id="s8">从器件到 IC</h3><p>版图、互连、功耗与 SoC。</p><span class="more">进入</span></a>
+      </div>
+    </section>
+  </div>
+</section></main>
+{% include "partials/footer.html" %}
+<script src="assets/js/main.js"></script>
+</body></html>
