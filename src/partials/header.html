@@ -6,10 +6,10 @@
       </a>
 
       <nav class="nav-links" aria-label="主导航">
-        <a href="index.html" class="active">首页</a>
+        <a href="index.html"{% if current == 'home' %} class="active"{% endif %}>首页</a>
 
         <span class="dropdown">
-          <a class="dd-link" href="basic.html">基础</a>
+          <a class="dd-link{% if current == 'basic' %} active{% endif %}" href="basic.html">基础</a>
           <button class="caret-btn" aria-label="展开基础" aria-expanded="false" aria-controls="menu-basic">▾</button>
           <div class="menu" id="menu-basic" role="menu">
             <a href="basic.html#top">返回目录</a>
@@ -25,7 +25,7 @@
         </span>
 
         <span class="dropdown">
-          <a class="dd-link" href="process.html">工艺</a>
+          <a class="dd-link{% if current == 'process' %} active{% endif %}" href="process.html">工艺</a>
           <button class="caret-btn" aria-label="展开工艺" aria-expanded="false" aria-controls="menu-process">▾</button>
           <div class="menu" id="menu-process" role="menu">
             <a href="process.html#oxidation">热氧化</a>
@@ -35,8 +35,8 @@
           </div>
         </span>
 
-        <a href="equipment.html">设备</a>
-        <a href="materials.html">材料</a>
+        <a href="equipment.html"{% if current == 'equipment' %} class="active"{% endif %}>设备</a>
+        <a href="materials.html"{% if current == 'materials' %} class="active"{% endif %}>材料</a>
       </nav>
 
       <div class="nav-right">
