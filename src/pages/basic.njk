@@ -1,13 +1,12 @@
-<!doctype html>
-<html lang="zh-CN">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>基础 · 半导体学习网</title>
+{% extends 'layouts/base.njk' %}
+
+{% block title %}基础 · 半导体学习网{% endblock %}
+
+{% block head %}
 <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-{% include "partials/header.html" %}
+{% endblock %}
+
+{% block content %}
 <main id="main">
 <section class="section container">
   <nav class="breadcrumb" aria-label="breadcrumb">
@@ -42,6 +41,8 @@
     </section>
   </div>
 </section></main>
-{% include "partials/footer.html" %}
+{% endblock %}
+
+{% block scripts %}
 <script src="assets/js/main.js"></script>
-</body></html>
+{% endblock %}

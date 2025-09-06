@@ -1,15 +1,13 @@
-<!doctype html>
-<html lang="zh-CN">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>首页 | 半导体知识站</title>
+{% extends 'layouts/base.njk' %}
+
+{% block title %}首页 | 半导体知识站{% endblock %}
+
+{% block head %}
   <meta name="description" content="首页 - 半导体知识站（白色主题）" />
   <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  {% include "partials/header.html" %}
+{% endblock %}
 
+{% block content %}
   <main class="hero">
     <div class="container hero-inner">
       <div class="hero-text">
@@ -76,9 +74,9 @@
       </div>
     </div>
   </section>
+{% endblock %}
 
-  {% include "partials/footer.html" %}
-
+{% block scripts %}
   <!-- 移除 themes.css / theme-toggle.js，保留自定义脚本 -->
   <script>
   // Split interaction: text navigates, caret toggles menu
@@ -103,5 +101,4 @@
     });
   })();
   </script>
-</body>
-</html>
+{% endblock %}

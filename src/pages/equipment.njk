@@ -1,13 +1,12 @@
-<!doctype html>
-<html lang="zh-CN">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>设备 · 半导体学习网</title>
+{% extends 'layouts/base.njk' %}
+
+{% block title %}设备 · 半导体学习网{% endblock %}
+
+{% block head %}
 <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-{% include "partials/header.html" %}
+{% endblock %}
+
+{% block content %}
 <main id="main">
 <section class="section container">
   <nav class="breadcrumb" aria-label="breadcrumb">
@@ -18,8 +17,9 @@
   <div class="grid">
     <div class="card"><img src="assets/img/equipment.png" alt=""><h3>示例模块</h3><p>替换为你的实际模块。</p></div>
   </div>
-</section>
-</main>
-{% include "partials/footer.html" %}
+</section></main>
+{% endblock %}
+
+{% block scripts %}
 <script src="assets/js/main.js"></script>
-</body></html>
+{% endblock %}
