@@ -7,56 +7,7 @@
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header class="nav">
-    <div class="container nav-inner">
-      <a class="brand" href="index.html" aria-label="首页">
-        <span class="brand-logo" aria-hidden="true"></span>
-        <span>半导体知识站</span>
-      </a>
-
-      <nav class="nav-links" aria-label="主导航">
-        <a href="index.html" class="active">首页</a>
-
-        <span class="dropdown">
-          <a class="dd-link" href="basic.html">基础</a>
-          <button class="caret-btn" aria-label="展开基础" aria-expanded="false" aria-controls="menu-basic">▾</button>
-          <div class="menu" id="menu-basic" role="menu">
-            <a href="basic.html#top">返回目录</a>
-            <a href="basic.html#step1-what">STEP1 半导体是什么</a>
-            <a href="basic.html#step2-materials">STEP2 材料</a>
-            <a href="basic.html#step3-np">STEP3 n/p 型</a>
-            <a href="basic.html#step4-bands">STEP4 能带</a>
-            <a href="basic.html#step5-bands-np">STEP5 n/p 能带</a>
-            <a href="basic.html#step6-pn">STEP6 PN 结</a>
-            <a href="basic.html#step7-bias">STEP7 偏置</a>
-            <a href="basic.html#step8-breakdown">STEP8 击穿</a>
-          </div>
-        </span>
-
-        <span class="dropdown">
-          <a class="dd-link" href="process.html">工艺</a>
-          <button class="caret-btn" aria-label="展开工艺" aria-expanded="false" aria-controls="menu-process">▾</button>
-          <div class="menu" id="menu-process" role="menu">
-            <a href="process.html#oxidation">热氧化</a>
-            <a href="process.html#deposition">薄膜沉积</a>
-            <a href="process.html#lithography">光刻</a>
-            <a href="process.html#etch">刻蚀与注入</a>
-          </div>
-        </span>
-
-        <a href="equipment.html">设备</a>
-        <a href="materials.html">材料</a>
-      </nav>
-
-      <div class="nav-right">
-        <form class="search" action="search.html" method="get" role="search">
-          <input name="q" type="search" placeholder="搜索：氧化、光刻、LPCVD…" aria-label="站内搜索" />
-          <span class="icon">🔎</span>
-        </form>
-      </div>
-    </div>
-  </header>
-
+{% include "partials/header.html" %}
 <main id="main">
 <section class="section container">
   <nav class="breadcrumb" aria-label="breadcrumb">
@@ -91,14 +42,6 @@
     </section>
   </div>
 </section></main>
-  <footer class="footer">
-    <div class="container">
-      <div class="foot">
-        <div class="brand"><span class="brand-logo"></span><span>半导体知识站</span></div>
-        <div class="foot-muted">© 2025 All rights reserved.</div>
-      </div>
-    </div>
-  </footer>
-
+{% include "partials/footer.html" %}
 <script src="assets/js/main.js"></script>
 </body></html>
