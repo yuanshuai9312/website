@@ -5,7 +5,7 @@ const nunjucks = require('nunjucks');
 const srcDir = path.join(__dirname, 'src');
 const pagesDir = path.join(srcDir, 'pages');
 
-nunjucks.configure(srcDir, { autoescape: false });
+nunjucks.configure(srcDir, { autoescape: true });
 
 fs.readdirSync(pagesDir)
   .filter(f => f.endsWith('.njk'))
