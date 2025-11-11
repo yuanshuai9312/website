@@ -53,6 +53,19 @@ img{max-width:100%;display:block;height:auto}
 .ftr{display:flex;align-items:center;justify-content:space-between;padding:16px 0;color:var(--muted)}
 .back{border:1px solid var(--border);padding:.35rem .6rem;border-radius:.5rem;text-decoration:none}
 
+/* charts */
+.chart-section{margin-top:32px}
+.chart-wrap{margin-top:20px;display:flex;flex-direction:column;gap:16px;align-items:flex-start}
+.chart-frame{max-width:560px;width:100%;background:#fff;border:1px solid var(--border);border-radius:.75rem;padding:12px;box-shadow:var(--shadow)}
+.bar-chart{display:block;width:100%;height:auto}
+.chart-legend{display:flex;flex-wrap:wrap;gap:12px;margin:0;padding:0;list-style:none;color:var(--muted)}
+.chart-legend li{display:inline-flex;align-items:center;gap:6px;font-size:.95rem}
+.chart-swatch{width:14px;height:14px;border-radius:3px;display:inline-block}
+.chart-note{margin:0;color:var(--muted);font-size:.9rem}
+.chart-table{border-collapse:collapse;margin:0;width:auto;font-size:.95rem}
+.chart-table caption{margin-bottom:6px;font-weight:600;text-align:left}
+.chart-table th,.chart-table td{padding:6px 10px;border:1px solid var(--border);text-align:left}
+
 /* responsive */
 @media (max-width: 920px){
   .hero-inner{grid-template-columns:1fr;gap:20px}

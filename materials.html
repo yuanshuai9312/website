@@ -68,6 +68,33 @@
   <div class="grid">
     <div class="card"><img src="assets/img/materials.png" alt=""><h3>示例模块</h3><p>替换为你的实际模块。</p></div>
   </div>
+
+  <section class="chart-section" aria-labelledby="tool2-qdr-title">
+    <h2 id="tool2-qdr-title">Tool2 QDR 基础图表</h2>
+    <p class="muted">比较 Tool2 QDR 在超标、接近与达标三种状态下的 SPC 结果。</p>
+    <div class="chart-wrap">
+      <div class="chart-frame">
+        <svg class="bar-chart" data-chart="tool2-qdr" role="img" aria-labelledby="tool2-qdr-title tool2-qdr-desc">
+          <title>Tool2 QDR 清洗状态分布</title>
+          <desc id="tool2-qdr-desc" data-chart-desc>Tool2 QDR 清洗状态分布</desc>
+        </svg>
+      </div>
+      <ul class="chart-legend" aria-label="图例">
+        <li><span class="chart-swatch" style="background:#ef4444"></span><span>超标</span></li>
+        <li><span class="chart-swatch" style="background:#f59e0b"></span><span>接近</span></li>
+        <li><span class="chart-swatch" style="background:#22c55e"></span><span>达标</span></li>
+      </ul>
+      <table class="chart-table" aria-label="Tool2 QDR 指标表">
+        <caption>Tool2 QDR 指标（ppm）</caption>
+        <tbody>
+          <tr><th scope="row">超标</th><td>12.4</td></tr>
+          <tr><th scope="row">接近</th><td>8.7</td></tr>
+          <tr><th scope="row">达标</th><td>6.2</td></tr>
+        </tbody>
+      </table>
+      <p class="chart-note">柱状图的刻度会根据数据自动扩展，确保清洗后的接近值与达标值同样清晰可见。</p>
+    </div>
+  </section>
 </section>
 </main>
   <footer class="footer">
