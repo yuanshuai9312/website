@@ -57,6 +57,7 @@ img{max-width:100%;display:block;height:auto}
 .chart-section{margin-top:32px}
 .chart-wrap{margin-top:20px;display:flex;flex-direction:column;gap:16px;align-items:flex-start}
 .chart-frame{max-width:560px;width:100%;background:#fff;border:1px solid var(--border);border-radius:.75rem;padding:12px;box-shadow:var(--shadow)}
+.chart-frame svg{display:block;width:100%;height:auto}
 .bar-chart{display:block;width:100%;height:auto}
 .chart-legend{display:flex;flex-wrap:wrap;gap:12px;margin:0;padding:0;list-style:none;color:var(--muted)}
 .chart-legend li{display:inline-flex;align-items:center;gap:6px;font-size:.95rem}
