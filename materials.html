@@ -68,6 +68,69 @@
   <div class="grid">
     <div class="card"><img src="assets/img/materials.png" alt=""><h3>示例模块</h3><p>替换为你的实际模块。</p></div>
   </div>
+
+  <section class="chart-section" aria-labelledby="tool2-qdr-title">
+    <h2 id="tool2-qdr-title">Tool2 QDR 基础图表</h2>
+    <p class="muted">比较 Tool2 QDR 在超标、接近与达标三种状态下的 SPC 结果。</p>
+    <div class="chart-wrap">
+      <div class="chart-frame">
+        <svg class="bar-chart" data-chart="tool2-qdr" role="img" aria-labelledby="tool2-qdr-title tool2-qdr-desc">
+          <title>Tool2 QDR 清洗状态分布</title>
+          <desc id="tool2-qdr-desc" data-chart-desc>Tool2 QDR 清洗状态分布</desc>
+        </svg>
+      </div>
+      <ul class="chart-legend" aria-label="图例">
+        <li><span class="chart-swatch" style="background:#ef4444"></span><span>超标</span></li>
+        <li><span class="chart-swatch" style="background:#f59e0b"></span><span>接近</span></li>
+        <li><span class="chart-swatch" style="background:#22c55e"></span><span>达标</span></li>
+      </ul>
+        <table class="chart-table" aria-label="Tool2 QDR 指标表">
+          <caption>Tool2 QDR 指标（ppm）</caption>
+          <tbody>
+            <tr><th scope="row">超标</th><td>12.43</td></tr>
+            <tr><th scope="row">接近</th><td>8.66</td></tr>
+            <tr><th scope="row">达标</th><td>6.18</td></tr>
+          </tbody>
+        </table>
+      <p class="chart-note">柱状图的刻度会根据数据自动扩展，确保清洗后的接近值与达标值同样清晰可见。</p>
+    </div>
+  </section>
+
+  <section class="chart-section" aria-labelledby="tool2-fr-qdr-title">
+    <h2 id="tool2-fr-qdr-title">Tool2 FR/QDR 双轴趋势</h2>
+    <p class="muted">半年内 FR 与 QDR 的双轴对比曲线，两者均使用折线呈现，便于直观比较。</p>
+    <div class="chart-wrap">
+      <div class="chart-frame">
+        <svg class="dual-axis-chart" data-chart="tool2-fr-qdr" role="img" aria-labelledby="tool2-fr-qdr-title tool2-fr-qdr-desc">
+          <title>Tool2 FR / QDR 趋势对比</title>
+          <desc id="tool2-fr-qdr-desc" data-chart-desc>Tool2 FR / QDR 趋势对比</desc>
+        </svg>
+      </div>
+      <ul class="chart-legend" aria-label="图例">
+        <li><span class="chart-swatch" style="background:#2563eb"></span><span>FR</span></li>
+        <li><span class="chart-swatch" style="background:#7c3aed"></span><span>QDR</span></li>
+      </ul>
+      <table class="chart-table" aria-label="Tool2 FR/QDR 趋势表">
+        <caption>Tool2 FR/QDR 指标（月度）</caption>
+        <thead>
+          <tr>
+            <th scope="col">月份</th>
+            <th scope="col">FR (%)</th>
+            <th scope="col">QDR (ppm)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">1月</th><td>0.58</td><td>320.4</td></tr>
+          <tr><th scope="row">2月</th><td>0.62</td><td>295.8</td></tr>
+          <tr><th scope="row">3月</th><td>0.55</td><td>310.2</td></tr>
+          <tr><th scope="row">4月</th><td>0.60</td><td>275.6</td></tr>
+          <tr><th scope="row">5月</th><td>0.57</td><td>268.9</td></tr>
+          <tr><th scope="row">6月</th><td>0.64</td><td>250.5</td></tr>
+        </tbody>
+      </table>
+      <p class="chart-note">FR 与 QDR 均采用折线展示并各自对应左右 y 轴刻度，确保双指标在同一视图下保持清晰可读。</p>
+    </div>
+  </section>
 </section>
 </main>
   <footer class="footer">
